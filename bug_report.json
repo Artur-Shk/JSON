@@ -1,1 +1,5 @@
-
+{ "bug report": "Summary,
+                 Environment,
+                 Steps To Reproduce,
+                 Actual/Expected Result"
+}
