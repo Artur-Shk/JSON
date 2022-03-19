@@ -1,0 +1,171 @@
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test
+$ cd JSON/
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ > new.json;
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ ls -la;
+total 5
+drwxr-xr-x 1 artur 197609 0 Mar 19 20:12 ./
+drwxr-xr-x 1 artur 197609 0 Mar 19 20:10 ../
+drwxr-xr-x 1 artur 197609 0 Mar 19 20:09 .git/
+-rw-r--r-- 1 artur 197609 8 Mar 19 20:09 README.md
+-rw-r--r-- 1 artur 197609 0 Mar 19 20:12 new.json
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ git add .; commit - m "HW2";
+bash: commit: command not found
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ git add .; commit -m "HW2";
+bash: commit: command not found
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ git add ./; git commit -m "HW2";
+[main 942c16c] HW2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new.json
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ git push;
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 273 bytes | 273.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/Artur-Shk/JSON.git
+To https://github.com/Artur-Shk/HW2_Group_28.git
+   0fbbabb..942c16c  main -> main
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ vim new.json;
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ git status;
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   new.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ git add new.json; git commit -m "created 4 rows";
+warning: LF will be replaced by CRLF in new.json.
+The file will have its original line endings in your working directory
+[main f38066e] created 4 rows
+ 1 file changed, 6 insertions(+)
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ git push;
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 347 bytes | 347.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/Artur-Shk/JSON.git
+To https://github.com/Artur-Shk/HW2_Group_28.git
+   942c16c..f38066e  main -> main
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ > preferences.json;
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ vim preferences.json;
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ > sklls.json;
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ rm sklls.json;
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ > scills.json;
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ ls -la;
+total 11
+drwxr-xr-x 1 artur 197609   0 Mar 19 20:58 ./
+drwxr-xr-x 1 artur 197609   0 Mar 19 20:10 ../
+drwxr-xr-x 1 artur 197609   0 Mar 19 20:36 .git/
+-rw-r--r-- 1 artur 197609   8 Mar 19 20:09 README.md
+-rw-r--r-- 1 artur 197609  81 Mar 19 20:28 new.json
+-rw-r--r-- 1 artur 197609 157 Mar 19 20:53 preferences.json
+-rw-r--r-- 1 artur 197609   0 Mar 19 20:58 scills.json
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ vim scills.json;
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ git status;
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        preferences.json
+        scills.json
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ git add .; git commit -m "created new rows";
+warning: LF will be replaced by CRLF in preferences.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in scills.json.
+The file will have its original line endings in your working directory
+[main 8e0255d] created new rows
+ 2 files changed, 12 insertions(+)
+ create mode 100644 preferences.json
+ create mode 100644 scills.json
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ git push;
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 534 bytes | 534.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/Artur-Shk/JSON.git
+To https://github.com/Artur-Shk/HW2_Group_28.git
+   f38066e..8e0255d  main -> main
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ git status;
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ git pull;
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.32 KiB | 8.00 KiB/s, done.
+From https://github.com/Artur-Shk/HW2_Group_28
+   8e0255d..853b2f8  main       -> origin/main
+Updating 8e0255d..853b2f8
+Fast-forward
+ bug_report.json | 5 +++++
+ 1 file changed, 5 insertions(+)
+ create mode 100644 bug_report.json
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ > code_json_HW2.txt;
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/git_test/JSON (main)
+$ vim code_json_HW2.txt;
+
