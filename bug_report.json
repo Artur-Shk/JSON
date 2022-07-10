@@ -1,2 +1,9 @@
-{ "bug report": "Summary, Environment, Steps To Reproduce, Actual/Expected Result"
+{ "bug report": 
+ [
+     "Summary", 
+     "Environment", 
+     "Steps To Reproduce", 
+     "Severity", 
+     "Actual/Expected Result"  
+ ]
 }
