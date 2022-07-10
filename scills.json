@@ -1,3 +1,15 @@
 {
-	"scills": "linux terminal, git bash, android studio, postman, SQL"
+    "skills": [
+        "Theory testing",
+        "Git",
+        "Linux_Terminale",
+        "Postman",
+        "SQL",
+        "Fiddler",
+        "Jmeter",
+        "Charles",
+        "DevTool",
+        "Android_studio",
+        "ADB"
+    ]
 }
